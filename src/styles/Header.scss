@@ -1,0 +1,16 @@
+.header {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  margin-top: calc(10px + 3vmin);
+  & > a {
+    border-top: 1px solid gray;
+    color: rgb(165, 165, 165);
+    font-size: calc(10px + 3vmin);
+    text-decoration: none;
+  }
+}
