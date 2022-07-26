@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import '../styles/Header.scss';
 
 const Header = () => {
@@ -6,15 +6,23 @@ const Header = () => {
     <>
       <header className="header">Autotech Steve</header>
       <nav className="nav-links">
-        <Link id="home" className="link" to="/">
+        <NavLink id="home" className={({ isActive }) => (isActive ? 'selected' : undefined)} to="/">
           Home
-        </Link>
-        <Link id="home" className="link" to="/services">
+        </NavLink>
+        <NavLink
+          id="home"
+          className={({ isActive }) => (isActive ? 'selected' : undefined)}
+          to="/services"
+        >
           Services
-        </Link>
-        <Link id="home" className="link" to="/contact">
+        </NavLink>
+        <NavLink
+          id="home"
+          className={({ isActive }) => (isActive ? 'selected' : undefined)}
+          to="/contact"
+        >
           Contact Me
-        </Link>
+        </NavLink>
       </nav>
     </>
   );
