@@ -10,18 +10,18 @@ const Header = () => {
           Home
         </NavLink>
         <NavLink
-          id="home"
+          id="services"
           className={({ isActive }) => (isActive ? 'selected' : undefined)}
           to="/services"
         >
           Services
         </NavLink>
         <NavLink
-          id="home"
+          id="contact"
           className={({ isActive }) => (isActive ? 'selected' : undefined)}
           to="/contact"
         >
-          Contact Me
+          Contact
         </NavLink>
       </nav>
     </>
