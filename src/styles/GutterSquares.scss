@@ -1,0 +1,44 @@
+.squares {
+  display: grid;
+  position: absolute;
+  grid-template:
+    'sq1 . sq2 sq3' auto
+    'sq4 . . sq5' auto
+    '. sq6 sq7 .' auto;
+  gap: 8px;
+
+  &.right {
+    right: calc(-250px - 6vmin);
+    right: -15%;
+    transition: opacity 0.5s linear;
+    // transform: rotate(140deg);
+    // transform: scaleX(-2);
+    @media only screen and (max-width: 1300px) {
+      //   transform: scale(0.5);
+      opacity: 0;
+      transition: opacity 0.5s linear;
+    }
+  }
+
+  &.left {
+    right: 80%;
+    // transform: rotate(140deg);
+  }
+
+  .square {
+    background-color: #353a44;
+    border-radius: 10px;
+    height: clamp(20px, 15vw, 150px);
+    width: clamp(20px, 15vw, 150px);
+    height: calc(100px + 1vmin);
+  }
+
+  .square:nth-of-type(1) {
+    grid-area: sq1;
+  }
+  @for $i from 1 through 7 {
+    .square:nth-of-type(#{$i}) {
+      grid-area: sq#{$i};
+    }
+  }
+}
