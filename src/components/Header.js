@@ -1,9 +1,29 @@
-import '../styles/Header.css';
+import { NavLink } from 'react-router-dom';
+import '../styles/Header.scss';
 
 const Header = () => {
   return (
     <>
-      <div className="header">Autotech Steve</div>
+      <header className="header">Autotech Steve</header>
+      <nav className="nav-links">
+        <NavLink id="home" className={({ isActive }) => (isActive ? 'selected' : undefined)} to="/">
+          Home
+        </NavLink>
+        <NavLink
+          id="services"
+          className={({ isActive }) => (isActive ? 'selected' : undefined)}
+          to="/services"
+        >
+          Services
+        </NavLink>
+        <NavLink
+          id="contact"
+          className={({ isActive }) => (isActive ? 'selected' : undefined)}
+          to="/contact"
+        >
+          Contact
+        </NavLink>
+      </nav>
     </>
   );
 };
