@@ -1,7 +1,7 @@
 import CardWrapper from '../components/CardWrapper';
-import kickersub from '../images/KickerSub.jpg';
 import kickervt from '../images/kickervt.jpg';
 import mecp from '../images/MECP_logo_250x100_L-2.png';
+import audiophile from '../images/audiophile.jpg';
 import '../styles/Home.scss';
 
 const Home = () => {
@@ -13,11 +13,11 @@ const Home = () => {
           It also gives you the confidence that I will perform industry standard install practices
           while in your vehicle.
         </CardWrapper>
-        <CardWrapper title="Kicker" image={kickersub}>
+        <CardWrapper title="Kicker" image={kickervt}>
           After installing for more than 5 years I have come to love Kicker for those wanting to
           enter the car audio scene, as well as those who have been around for a while.
         </CardWrapper>
-        <CardWrapper title="Kicker" image={kickervt}>
+        <CardWrapper title="Audiophile" image={audiophile}>
           After installing for more than 5 years I have come to love Kicker for those wanting to
           enter the car audio scene, as well as those who have been around for a while.
         </CardWrapper>
