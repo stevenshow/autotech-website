@@ -22,5 +22,6 @@
   }
   & .MuiCardMedia-root {
     transition: height 0.5s steps(100, end);
+    background-color: black;
   }
 }
