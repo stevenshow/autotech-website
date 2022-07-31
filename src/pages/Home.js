@@ -18,8 +18,9 @@ const Home = () => {
           enter the car audio scene, as well as those who have been around for a while.
         </CardWrapper>
         <CardWrapper title="Audiophile" image={audiophile}>
-          After installing for more than 5 years I have come to love Kicker for those wanting to
-          enter the car audio scene, as well as those who have been around for a while.
+          I have always been intrigued by audio and the amazing things that can be created and
+          experienced. This naturally drew me into car audio due to the simple fact that I spent a
+          majority of my time listening to music on my commute to work.
         </CardWrapper>
       </div>
     </>
