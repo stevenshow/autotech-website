@@ -9,15 +9,16 @@
 
 .nav-links {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-top: calc(10px + 5vmin);
   min-width: 50%;
-  justify-content: space-between;
+  min-width: calc(100% / 1.5);
 
   & > a {
     border-top: 1px solid transparent;
     color: rgb(165, 165, 165);
-    font-size: calc(10px + 3vmin);
+    font-size: calc(10px + 2.5vmin);
+    font-size: 60%;
     letter-spacing: calc(0.1px + 0.1vmin);
     text-decoration: none;
     &.selected {
@@ -28,9 +29,9 @@
   }
 }
 
-@media only screen and (max-width: 1000px) {
-  .nav-links > a:nth-child(2) {
-    margin-left: calc(10px + 4vmin);
-    margin-right: calc(10px + 4vmin);
-  }
+@media only screen and (max-width: 1275px) {
+  // .nav-links > a:nth-child(2) {
+  //   margin-left: calc(10px + 4vmin);
+  //   margin-right: calc(10px + 4vmin);
+  // }
 }
