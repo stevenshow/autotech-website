@@ -15,7 +15,7 @@
     max-width: calc(650px + 6vmin);
     transition: max-width 0.5s steps(100, start);
     & .MuiCardMedia-root {
-      height: 300px;
+      height: calc(300px + 1vmin);
       transition: height 0.5s steps(100, start);
     }
   }
