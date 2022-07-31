@@ -13,7 +13,7 @@
   margin-top: calc(10px + 5vmin);
   min-width: 50%;
   justify-content: space-between;
-  
+
   & > a {
     border-top: 1px solid transparent;
     color: rgb(165, 165, 165);
@@ -28,7 +28,7 @@
   }
 }
 
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 1000px) {
   .nav-links > a:nth-child(2) {
     margin-left: calc(10px + 4vmin);
     margin-right: calc(10px + 4vmin);

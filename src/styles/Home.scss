@@ -1,16 +1,25 @@
 .container {
-    padding: 30px;
-    height: 100%;
-    min-width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.test {
-    margin-top: calc(10px + 3vmin);
+  padding: 30px;
+  height: 100%;
+  min-width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .MuiCard-root.MuiPaper-root {
-    max-width: calc(600px + 6vmin);
+  margin-top: calc(10px + 3vmin);
+  max-width: calc(600px + 6vmin);
+  transition: max-width 0.5s steps(100, end);
+  &:hover {
+    max-width: calc(650px + 6vmin);
+    transition: max-width 0.5s steps(100, start);
+    & .MuiCardMedia-root {
+      height: 300px;
+      transition: height 0.5s steps(100, start);
+    }
+  }
+  & .MuiCardMedia-root {
+    transition: height 0.5s steps(100, end);
+  }
 }
