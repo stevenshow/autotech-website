@@ -11,20 +11,3 @@
     z-index: -1;
   }
 }
-
-.MuiCard-root.MuiPaper-root {
-  margin-top: calc(10px + 3vmin);
-  max-width: calc(600px + 6vmin);
-  transition: max-width 0.5s steps(100, end);
-  &:hover {
-    max-width: calc(650px + 6vmin);
-    transition: max-width 0.5s steps(100, start);
-    & .MuiCardMedia-root {
-      height: 300px;
-      transition: height 0.5s steps(100, start);
-    }
-  }
-  & .MuiCardMedia-root {
-    transition: height 0.5s steps(100, end);
-  }
-}
