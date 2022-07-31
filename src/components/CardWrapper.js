@@ -3,6 +3,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import { CardActionArea } from '@mui/material';
 import Typography from '@mui/material/Typography';
+import '../styles/CardWrapper.scss';
 
 const CardWrapper = ({ alt, title, image, children, minHeight = '250' }) => {
   return (

@@ -6,22 +6,3 @@
   flex-direction: column;
   align-items: center;
 }
-
-.MuiCard-root.MuiPaper-root {
-  margin-top: calc(10px + 3vmin);
-  max-width: calc(600px + 6vmin);
-  transition: max-width 0.5s steps(100, end);
-  background-color: rgb(201, 201, 201);
-  &:hover {
-    max-width: calc(650px + 6vmin);
-    transition: max-width 0.5s steps(100, start);
-    & .MuiCardMedia-root {
-      transform: scale(1.05);
-      transition: transform 0.5s steps(100, start);
-    }
-  }
-  & .MuiCardMedia-root {
-    transition: transform 0.5s steps(100, end);
-    background-color: black;
-  }
-}

@@ -1,7 +1,7 @@
 import CardWrapper from '../components/CardWrapper';
-import '../styles/Home.scss';
 import kickersub from '../images/KickerSub.jpg';
 import mecp from '../images/MECP_logo_250x100_L-2.png';
+import '../styles/Home.scss';
 
 const Home = () => {
   return (
