@@ -11,21 +11,7 @@ const Home = () => {
   return (
     <>
       <div className="container">
-        <Card sx={{ backgroundColor: 'gray' }}>
-          <CardActionArea>
-            <CardMedia component="img" height="250" image={kickersub} alt="kicker sub" />
-            <CardContent>
-              <Typography gutterBottom variant="h4" component="div">
-                Kicker
-              </Typography>
-              <Typography variant="body1" color="text.primary">
-                After installing for more than 5 years I have come to love Kicker for those wanting
-                to enter the car audio scene, as well as those who have been around for a while.
-              </Typography>
-            </CardContent>
-          </CardActionArea>
-        </Card>
-        <Card sx={{ backgroundColor: 'gray' }}>
+        <Card>
           <CardActionArea>
             <CardMedia component="img" minHeight="300" image={mecp} alt="MECP logo" />
             <CardContent>
@@ -40,7 +26,7 @@ const Home = () => {
             </CardContent>
           </CardActionArea>
         </Card>
-        <Card sx={{ backgroundColor: 'gray' }}>
+        <Card>
           <CardActionArea>
             <CardMedia component="img" height="250" image={kickersub} alt="kicker sub" />
             <CardContent>
@@ -54,7 +40,21 @@ const Home = () => {
             </CardContent>
           </CardActionArea>
         </Card>
-        <Card sx={{ backgroundColor: 'gray' }}>
+        <Card>
+          <CardActionArea>
+            <CardMedia component="img" height="250" image={kickersub} alt="kicker sub" />
+            <CardContent>
+              <Typography gutterBottom variant="h4" component="div">
+                Kicker
+              </Typography>
+              <Typography variant="body1" color="text.primary">
+                After installing for more than 5 years I have come to love Kicker for those wanting
+                to enter the car audio scene, as well as those who have been around for a while.
+              </Typography>
+            </CardContent>
+          </CardActionArea>
+        </Card>
+        <Card>
           <CardActionArea>
             <CardMedia component="img" height="250" image={kickersub} alt="kicker sub" />
             <CardContent>
