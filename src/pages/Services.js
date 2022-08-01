@@ -1,24 +1,26 @@
 import CardWrapper from '../components/CardWrapper';
-import kickervt from '../images/kickervt.jpg';
+import kickersub from '../images/Installs/kicker-subs-close.JPG';
 import radio from '../images/classic-radio.jpg';
 import audiophile from '../images/audiophile.jpg';
+import amp from '../images/Installs/kicker-amp-close.JPG';
 import '../styles/Services.scss';
 
 const Services = () => {
   return (
     <>
       <div className="container">
-        <CardWrapper title="Radio Install" image={radio}>
+        <CardWrapper title="Radio" image={radio}>
           Install of a Single or Double DIN radio in your vehicle, depending on your cars fitment.
+          This can include either a video or non-video screen.
         </CardWrapper>
-        <CardWrapper title="Audiophile" image={audiophile}>
-          I have always been intrigued by audio and the amazing things that can be created and
-          experienced. This naturally drew me into car audio due to the simple fact that I spent a
-          majority of my time listening to music on my commute to work.
+        <CardWrapper title="Subwoofer" image={kickersub}>
+          Install as many subwoofers as desired into their respective boxes and hook them up to an
+          existing amplifier.
         </CardWrapper>
-        <CardWrapper title="Kicker" image={kickervt}>
-          After installing for more than 5 years I have come to love Kicker for those wanting to
-          enter the car audio scene, as well as those who have been around for a while.
+        <CardWrapper title="Amplifier" image={amp}>
+          Run power from battery to location of choosing and install amplifier in desired position.
+          Hook amplifier to subwoofers. Tune amplifier to assure no clipping as well as please the
+          customer.
         </CardWrapper>
       </div>
     </>
