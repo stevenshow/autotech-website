@@ -1,17 +1,14 @@
 .header {
-  text-align: center;
-  padding: 10px;
-  letter-spacing: calc(0.5px + 0.5vmin);
-  border-radius: 10px;
+  font-family: 'Martel Sans', sans-serif;
   margin-top: calc(10px + 1vmin);
-  font-family: Martel, sans-serif;
-  font-weight: 900;
-  font-style: italic;
-  & + span {
-    font-family: Martel, sans-serif;
+  & > span {
+    letter-spacing: calc(0.5px + 0.5vmin);
+    font-style: italic;
+    display: block;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: calc(1px + 3vmin);
     font-weight: lighter;
-    // font-family: 'Courier New', Courier, monospace;
-    font-size: calc(1px + 4vmin);
+    text-align: center;
   }
 }
 
@@ -35,11 +32,4 @@
       transition: border-color 1s ease-out, color 1s ease-out;
     }
   }
-}
-
-@media only screen and (max-width: 1275px) {
-  // .nav-links > a:nth-child(2) {
-  //   margin-left: calc(10px + 4vmin);
-  //   margin-right: calc(10px + 4vmin);
-  // }
 }

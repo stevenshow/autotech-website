@@ -4,8 +4,10 @@ import '../styles/Header.scss';
 const Header = () => {
   return (
     <>
-      <header className="header">Autotech Steve</header>
-      <span>Car Audio Service</span>
+      <header className="header">
+        AUTOTECH STEVE
+        <span>Car Audio Service</span>
+      </header>
       <nav className="nav-links">
         <NavLink id="home" className={({ isActive }) => (isActive ? 'selected' : undefined)} to="/">
           Home
