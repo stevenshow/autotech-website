@@ -15,5 +15,6 @@
   & .MuiCardMedia-root {
     background-color: black;
     transition: transform 0.5s steps(100, end);
+    filter: grayscale(20%);
   }
 }

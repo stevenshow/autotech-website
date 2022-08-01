@@ -1,14 +1,14 @@
 import CardWrapper from '../components/CardWrapper';
 import kickervt from '../images/kickervt.jpg';
 import mecp from '../images/MECP_logo_250x100_L-2.png';
-import audiophile from '../images/audiophile.jpg';
+import soundwave from '../images/color-equalizer.jpg';
 import '../styles/Home.scss';
 
 const Home = () => {
   return (
     <>
       <div className="container">
-        <CardWrapper title="Audiophile" image={audiophile}>
+        <CardWrapper title="Audiophile" image={soundwave}>
           I have always been intrigued by audio and the amazing things that can be created and
           experienced. This naturally drew me into car audio due to the simple fact that I spent a
           majority of my time listening to music on my commute to work.
