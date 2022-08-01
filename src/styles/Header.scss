@@ -2,13 +2,13 @@
   font-family: 'Martel Sans', sans-serif;
   margin-top: calc(10px + 1vmin);
   & > span {
-    letter-spacing: calc(0.5px + 0.5vmin);
-    font-style: italic;
     display: block;
+    letter-spacing: calc(0.5px + 0.5vmin);
+    text-align: center;
     font-family: 'Courier New', Courier, monospace;
     font-size: calc(1px + 3vmin);
+    font-style: italic;
     font-weight: lighter;
-    text-align: center;
   }
 }
 
