@@ -1,7 +1,6 @@
 import CardWrapper from '../components/CardWrapper';
 import kickersub from '../images/Installs/kicker-subs-close.JPG';
 import radio from '../images/classic-radio.jpg';
-import audiophile from '../images/audiophile.jpg';
 import amp from '../images/Installs/kicker-amp-close.JPG';
 import '../styles/Services.scss';
 
@@ -19,8 +18,8 @@ const Services = () => {
         </CardWrapper>
         <CardWrapper title="Amplifier" image={amp}>
           Run power from battery to location of choosing and install amplifier in desired position.
-          Hook amplifier to subwoofers. Tune amplifier to assure no clipping as well as please the
-          customer.
+          Hook amplifier to subwoofers. Tune amplifier to assure no clipping as well as hone in on
+          the client's listening preferences.
         </CardWrapper>
       </div>
     </>
