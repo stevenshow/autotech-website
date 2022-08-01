@@ -5,6 +5,13 @@
   border-radius: 10px;
   box-shadow: 0px 0px 3px white;
   margin-top: calc(10px + 1vmin);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bolder;
+  & + span {
+    font-weight: lighter;
+    // font-family: 'Courier New', Courier, monospace;
+    font-size: calc(1px + 4vmin);
+  }
 }
 
 .nav-links {

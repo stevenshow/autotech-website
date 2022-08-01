@@ -5,6 +5,7 @@ const Header = () => {
   return (
     <>
       <header className="header">Autotech Steve</header>
+      <span>Car Audio Service</span>
       <nav className="nav-links">
         <NavLink id="home" className={({ isActive }) => (isActive ? 'selected' : undefined)} to="/">
           Home
