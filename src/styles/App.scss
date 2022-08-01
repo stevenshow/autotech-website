@@ -1,9 +1,17 @@
 .App {
-  background-color: #282c34;
+  align-items: center;
+  background-color: #091113;
   color: white;
   display: flex;
   flex-direction: column;
   font-size: calc(10px + 6vmin);
   min-height: 100vh;
-  align-items: center;
+
+  @media (min-width: 1000px) {
+    background-attachment: fixed;
+    background-image: url('../images/white-bar-equalizer.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+  }
 }

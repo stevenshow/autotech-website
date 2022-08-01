@@ -5,12 +5,18 @@ import { CardActionArea } from '@mui/material';
 import Typography from '@mui/material/Typography';
 import '../styles/CardWrapper.scss';
 
-const CardWrapper = ({ alt, title, image, children, minHeight = '250' }) => {
+const CardWrapper = ({ alt, title, image, children, minHeight = '250', objectFit }) => {
   return (
     <>
       <Card>
         <CardActionArea>
-          <CardMedia component="img" height={minHeight} image={image} alt={alt} />
+          <CardMedia
+            component="img"
+            height={minHeight}
+            image={image}
+            alt={alt}
+            sx={{ objectFit }}
+          />
           <CardContent>
             <Typography gutterBottom variant="h4" component="div">
               {title}
