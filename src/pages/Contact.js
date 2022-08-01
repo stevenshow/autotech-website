@@ -2,7 +2,7 @@ import CardWrapper from '../components/CardWrapper';
 import kickersub from '../images/Installs/kicker-subs-close.JPG';
 import radio from '../images/classic-radio.jpg';
 import amp from '../images/Installs/kicker-amp-close.JPG';
-import '../styles/Services.scss';
+import '../styles/Contact.scss';
 
 const Contact = () => {
   return (
