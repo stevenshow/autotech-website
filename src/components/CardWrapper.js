@@ -14,7 +14,9 @@ const CardWrapper = ({ alt, title, image, children, minHeight = '250', objectFit
 
   return (
     <>
-      <InfoModal title={title} open={open} close={handleClose} />
+      <InfoModal title={title} open={open} close={handleClose}>
+        <div>Hello World</div>
+      </InfoModal>
       <Card>
         <CardActionArea onClick={handleOpen}>
           <CardMedia

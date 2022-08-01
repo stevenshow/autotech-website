@@ -18,7 +18,7 @@ const style = {
   p: 4,
 };
 
-const InfoModal = ({ title, open, close }) => {
+const InfoModal = ({ title, open, close, children }) => {
   return (
     <>
       <Modal
@@ -38,13 +38,7 @@ const InfoModal = ({ title, open, close }) => {
               {title}
             </Typography>
             <Typography id="transition-modal-description" sx={{ mt: 2 }}>
-              Duis mollis, est non commodo luctus, nisi erat porttitor ligula. Duis mollis, est non
-              commodo luctus, nisi erat porttitor ligula. Duis mollis, est non commodo luctus, nisi
-              erat porttitor ligula. Duis mollis, est non commodo luctus, nisi erat porttitor
-              ligula. Duis mollis, est non commodo luctus, nisi erat porttitor ligula. Duis mollis,
-              est non commodo luctus, nisi erat porttitor ligula. Duis mollis, est non commodo
-              luctus, nisi erat porttitor ligula. Duis mollis, est non commodo luctus, nisi erat
-              porttitor ligula. Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
+              {children}
             </Typography>
           </Box>
         </Fade>
