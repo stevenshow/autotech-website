@@ -4,6 +4,10 @@ import Modal from '@mui/material/Modal';
 import Fade from '@mui/material/Fade';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
+import { Grid } from '@mui/material';
+import { styled } from '@mui/material/styles';
+import Paper from '@mui/material/Paper';
+import '../styles/InfoModal.scss';
 
 const style = {
   position: 'absolute',
@@ -17,6 +21,14 @@ const style = {
   boxShadow: 24,
   p: 4,
 };
+
+const Item = styled(Paper)(({ theme }) => ({
+  backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
+  ...theme.typography.body2,
+  padding: theme.spacing(1),
+  textAlign: 'center',
+  color: theme.palette.text.secondary,
+}));
 
 const InfoModal = ({ title, open, close, children }) => {
   return (
@@ -38,8 +50,11 @@ const InfoModal = ({ title, open, close, children }) => {
               {title}
             </Typography>
             <Typography id="transition-modal-description" sx={{ mt: 2 }}>
-              {children}
+              <Grid>
+                <Item>{children}</Item>
+              </Grid>
             </Typography>
+            <Button onClick={close}>Close</Button>
           </Box>
         </Fade>
       </Modal>
